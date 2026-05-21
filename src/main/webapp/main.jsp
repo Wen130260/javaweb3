@@ -14,9 +14,9 @@
 <!-- 查询条件的开始 -->
 <fieldset>
     <legend>查询条件</legend>
-    <form action="userSelect" method="post">
+    <form action="userServlet" method="post">
         用户姓名:
-        <input type="search" name="username" required autofocus="autofocus">
+        <input type="search" name="userName" required autofocus="autofocus">
         <button type="submit">查询</button>
 
     </form>

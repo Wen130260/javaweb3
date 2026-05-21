@@ -5,7 +5,6 @@ import com.test.util.DbUtil;
 
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -13,7 +12,7 @@ import java.util.List;
  *
  * @author 李占文
  * */
-public class UsrMessageDao {
+public class UserMessageDao {
     /**
      * 查询USER_MESSAGE表中USER_NAME列包含指定数据的用户信息
      * @param userName 查询的用户姓名
@@ -64,7 +63,7 @@ public class UsrMessageDao {
         }
     }
     public static void main(String[] args) {
-        List<UserMessage> list = new UsrMessageDao().selectByUserName("张");
+        List<UserMessage> list = new UserMessageDao().selectByUserName("张");
         System.out.println(list);
     }
 }
